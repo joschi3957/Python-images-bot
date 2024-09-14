@@ -1,6 +1,9 @@
 import discord
 from discord.ext import commands
 from discord.ext.commands import has_permissions
+import os
+import colorama
+from colorama import init, Fore, Style
 
 from images import *
 
@@ -9,6 +12,18 @@ TOKEN = 'enter youre token here'
 intents = discord.Intents.all()
 intents.members = True
 client = commands.Bot(command_prefix='!', intents=intents, description='j4n0sch_gaming', help_command=None)
+
+os.system('title Python-Image-bot [J4n0sch_1] ^| A simple discord server bot.')
+print(f'''
+		{Fore.BLUE}
+		   ____ __        ____            __          ____                                 __          __ 
+      / / // / ____  / __ \__________/ /_        /  _/___ ___  ____ _____ ____        / /_  ____  / /_
+ __  / / // /_/ __ \/ / / / ___/ ___/ __ \______ / // __ `__ \/ __ `/ __ `/ _ \______/ __ \/ __ \/ __/
+/ /_/ /__  __/ / / / /_/ (__  ) /__/ / / /_____// // / / / / / /_/ / /_/ /  __/_____/ /_/ / /_/ / /_  
+\____/  /_/ /_/ /_/\____/____/\___/_/ /_/     /___/_/ /_/ /_/\__,_/\__, /\___/     /_.___/\____/\__/  
+                                                                  /____/                              {Style.RESET_ALL}               
+''')
+
 
 
 @client.event
